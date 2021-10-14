@@ -53,7 +53,7 @@ public class Day14
 //			System.out.println(p);
 //		}
 		
-		Queue<String> people = new LinkedQueue<String>();
+		Queue<String> people = new ArrayQueue<String>();
 		people.enqueue("Alice");
 		people.enqueue("Beatrix");
 		people.enqueue("Clarice");
@@ -61,6 +61,13 @@ public class Day14
 		people.enqueue("Dimitri");
 		System.out.println(people.dequeue());
 		people.enqueue("Enrique");
+		people.enqueue("Frank");
+		people.enqueue("Georgina");
+		people.enqueue("Henrietta");
+		people.enqueue("Inga");
+		people.enqueue("J");
+		people.enqueue("Kara");
+		people.enqueue("Lola");
 		while (!people.isEmpty())
 			System.out.println(people.dequeue());
 
